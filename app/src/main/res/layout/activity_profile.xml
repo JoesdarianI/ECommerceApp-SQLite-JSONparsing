@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        android:text="Profile"
+        android:background="@drawable/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="Email :"
+            android:fontFamily="@font/poppins"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/emailP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textview"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="Username :"
+            android:fontFamily="@font/poppins"
+            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/usernameP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="Phonenumber :"
+            android:fontFamily="@font/poppins"
+            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/phoneP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/usernameETchange"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#28FFBF"
+            app:icon="@drawable/ic_baseline_save_24"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#28FFBF"
+        android:drawableRight="@android:drawable/ic_menu_delete"
+        android:fontFamily="@font/poppins"
+        android:text="Delete Account"
+        app:iconPadding="8dp" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="#D31727"
+        android:drawableRight="@drawable/ic_baseline_logout_24"
+        android:fontFamily="@font/poppins"
+        android:textAlignment="center"
+        android:text="Logout" />
+</LinearLayout>
